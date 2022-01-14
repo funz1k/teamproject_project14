@@ -2,6 +2,15 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+@import './utils/null';
+@import './utils/service';
+@import './utils/var';
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+@import './components/hero-hader';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/reviews';
+@import './components/contacts';
+@import './components/footer';
