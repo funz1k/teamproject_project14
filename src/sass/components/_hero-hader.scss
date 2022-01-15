@@ -2,6 +2,10 @@
     background-color: #FFB8CA;
     display: flex;
     align-items: center;
+    .container{
+        padding-top: 21px;
+        padding-bottom: 27px;
+    }
 }
 .container{
     min-width: 320px;
@@ -16,14 +20,16 @@
 
 .header__list{
     display: flex;
-    margin-left: 0px 35px 0px 0px;
+    @media screen and (max-width: 1280px){
+        display: none;
+    }
 }
 .header__link{
     color: #ffffff;
     font-size: 16px;
     font-style: blod;
-    font-family: DM sans;
-    text-transform: capitalize;
+    font-family: "DM+Sans";
+    
 
 }
 
@@ -43,6 +49,11 @@
     fill: #ffffff;
     justify-content: center;
     display: flex;
+    align-items: center;
+}
+.header-logo__icon{
+    justify-content: center;
+    align-items: center;
 }
 .header-logo__text{
     font-family: "Titan One", cursive;
@@ -52,4 +63,52 @@
     text-transform: uppercase;
     color: #D41443;
     margin-left: 10px;
+}
+.header-burger{ 
+    display: none;
+    @media screen and (max-width: 1280px){
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+}
+.header-burger {
+    &:before, &:after {
+        content: '';
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+    }
+    &:before {
+        top: 0;
+    }
+    &:after {
+        bottom: 0;
+    }
+}
+
+.button-menu{
+    
+    margin-left: auto;
+    color: #D41443;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border-color: transparent;
+    border: none;
+    @media screen and (min-width: 1280px){
+        display: none;
+    }
+}
+.button-menu__icon{
+    color: #D41443;
+        width: 24px;
+        height: 16px;
+        
+    
 }
