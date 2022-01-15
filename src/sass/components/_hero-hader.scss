@@ -13,6 +13,23 @@
 .header__navigation{
 
 }
+
+.header__list{
+    display: flex;
+    margin-left: 0px 35px 0px 0px;
+}
+.header__link{
+    color: #ffffff;
+    font-size: 16px;
+    font-style: blod;
+    font-family: DM sans;
+    text-transform: capitalize;
+
+}
+
+
+
+
 .header-logo__item{
     display: flex;
     align-items: center;

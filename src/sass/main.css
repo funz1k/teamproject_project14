@@ -95,6 +95,21 @@ body.modal-open {
   margin-left: auto;
 }
 
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0px 35px 0px 0px;
+}
+
+.header__link {
+  color: #ffffff;
+  font-size: 16px;
+  font-style: blod;
+  font-family: DM sans;
+  text-transform: capitalize;
+}
+
 .header-logo__item {
   display: -webkit-box;
   display: -ms-flexbox;
