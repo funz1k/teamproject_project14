@@ -1,12 +1,12 @@
 .advantages-container {
   background-color: #fff5f6;
+  padding-top: 90px;
 }
 
 .advantages-list {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 }
 
@@ -20,6 +20,9 @@
   @media screen and (min-width: 768px) {
     margin-left: 60px;
     height: 222px;
+    width: 180px;
+  }
+  @media screen and (min-width: 1280px) {
     width: 330px;
   }
 }
