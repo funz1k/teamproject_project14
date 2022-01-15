@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.header {
+  background-color: #FFB8CA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  min-width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header-logo__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo__form {
+  width: 50px;
+  height: 50px;
+  background-color: #D41443;
+  border-radius: 50%;
+  fill: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-logo__text {
+  font-family: "Titan One", cursive;
+  font-size: 26px;
+  Line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #D41443;
+  margin-left: 10px;
+}
+
+.products {
+  background-color: yellow;
+}
+
+.about {
+  background-color: tomato;
+  font-family: "Titan One", cursive;
+}
+
+.advantages {
+  background-color: green;
+}
+
+.gallery {
+  background-color: red;
+}
+
+.reviews {
+  background-color: black;
+}
+
+.contacts {
+  background-color: teal;
+}
+
+.footer {
+  background-color: orange;
+}
+/*# sourceMappingURL=main.css.map */
