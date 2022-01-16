@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-header {
+  background-color: blue;
+}
+
+.product-section {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.products-label {
+  font-family: Titan One, sans-serif;
+  font-size: 50px;
+}
+
+.advantages {
+  background-color: green;
+}
+
+.gallery {
+  background-color: red;
+}
+
+.reviews {
+  background-color: black;
+}
+
+.contacts {
+  background-color: teal;
+}
+
+.footer {
+  background-color: orange;
+}
+/*# sourceMappingURL=main.css.map */

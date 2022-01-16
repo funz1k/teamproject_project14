@@ -1,3 +1,164 @@
-.products{
-    background-color: yellow;
+.product-section {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.products-label {
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.products-title {
+  margin-bottom: 145px;
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 0.04em;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.products-list {
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.product-card {
+  position: relative;
+  width: 280px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 160px;
+  background-color: #ffb8ca;
+  border-radius: 24px;
+}
+
+.product-card:not(:last-child) {
+  @media screen and(max-width:767px) {
+    margin-bottom: 130px;
+  }
+}
+
+.product-card--icecream {
+  background-color: #ffb8ca;
+}
+
+.product-card--coffee {
+  background-color: #f0d1a5;
+}
+
+.product-card--milkshake {
+  background-color: #c2e297;
+}
+
+.product-card--icecream::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  bottom: 346px;
+  display: block;
+  width: 249px;
+  height: 252px;
+  background-image: url(..//images/products-images/mob-product-ice-cream.png);
+  background-size: contain;
+  background-position: center;
+
+  @media (min-device-pixel-ration: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(..//images/products-images/mob-product-ice-cream@2x.png);
+  }
+}
+
+.product-card--coffee::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  bottom: 346px;
+  display: block;
+  width: 249px;
+  height: 252px;
+  background-image: url(..//images/products-images/mob-product-coffee.png);
+  background-size: contain;
+  background-position: center;
+
+  @media (min-device-pixel-ration: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(..//images/products-images/mob-product-coffee@2x.png);
+  }
+}
+
+.product-card--milkshake::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  bottom: 346px;
+  display: block;
+  width: 249px;
+  height: 252px;
+  background-image: url(..//images/products-images/mob-product-milkshake.png);
+  background-size: contain;
+  background-position: center;
+
+  @media (min-device-pixel-ration: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(..//images/products-images/mob-product-milkshake@2x.png);
+  }
+}
+
+.product-card__title {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.product-card__title::after {
+  content: '';
+  display: block;
+  width: 26px;
+  margin: 30px auto;
+  border-top: 6px dotted #ffffff;
+}
+
+.product-card__descr {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.product-card__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.product-card__button-icon {
+  fill: #d7224d;
+
+  width: 11px;
+  height: 10px;
 }
