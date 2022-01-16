@@ -92,30 +92,39 @@
     background-color: #FFB8CA;
     margin-left: auto;
     margin-right: auto;
-    height: 405px;/*
-    @media screen and (min-width: 768px) {
-        padding-top: 38px;   
-    }*/
+    height: 405px;
+    @media screen and (min-width: 768px) and (max-width: 1280px){
+        height: 301px;
+    }
+    @media screen and (min-width: 1280px){
+        height: 567px;
+    }
 }
 .hero__top-title{
-    @media screen and (min-width: 240px) and (max-width: 767px){
+    @media screen and (max-width: 768px){
         position: absolute;
         z-index:2;
         top: 193px;
         left: 20px;
     }
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 768px) and (max-width: 1280px){
             top: 102px;
             left: 34px;
             position: absolute;
             z-index:2;
         }
-            @media screen and (min-width: 1199px){
+            @media screen and (min-width: 1280px){
             top: 171px;
             left: 115px;
             position: absolute;
             z-index:2;
         }
+}
+.hero__top-first{
+    @media screen and (min-width: 768px){
+    width: 230px;
+}
+
 }
 
 .hero__text{
@@ -141,7 +150,7 @@
 .button-top__list{
     display: flex;
 }
-.button-top__item{}
+
 
 .button-first{
     width: 62.4px;
@@ -182,6 +191,72 @@
             background-color: #ECEBEB;
     }
 }
+.hero__part-eco
+.hero__text-eco{
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.25 ;
+    margin-bottom: 7px;
+    max-width: 114px;
+}
+.hero__link-eco{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero__icon-eco{
+    fill: #D41443;
+    width: 10px;
+}
+.hero__image-eco{
+    display: flex;
+    align-items: flex-end;
+    @media screen and (min-width: 1280px){
+        margin-top: 56px;
+    }
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+}
+.hero-circle{
+    background-color: #FFA5BA;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    border-radius: 50%;
+    @media screen and (min-width: 1280px){
+        width: 538px;
+        height: 538px;
+
+    }
+    @media screen and (min-width: 768px) and (max-width: 1280px){
+        width: 324px;
+        height: 322px;
+
+    }
+    @media screen and (max-width: 767px){
+        width: 346px;
+        height: 344px;
+
+        
+    }
+}
+.hero__img-ice{
+    
+
+}
+
+
+
+
+
+
+
 
 /*{
     display: block;
@@ -192,6 +267,12 @@
     position: absolute;
     content: '';
 }*/
+
+
+
+
+
+
 
 
 

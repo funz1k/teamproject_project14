@@ -35,46 +35,117 @@
         </div>
     </div>
 
-
-
-    
 </header>
 
 
 
 <section class="hero">
     <div class="container">
-        <div class="hero__top-title">
-            <h1 class="hero__text">ice cream made with
-                <span class="hero__top-text">passion</span>
-            </h1>
-            <ul class="button-top__list">
-                <li class="button-top__item">
-                    <button type="button" class="button-first" href="">
-                    Products</button>
-                </li>
-                <li class="button-top__item">
-                    <button type="button" class="button-second" href="">
-                    How it’s made?</button>
-                </li>
-            </ul>
-        </div>
-        <div class="hero__image-eco">
-            <picture>
-                <source 
-                srcset="
-                "
-                media="(min-width: 1200px)"
-                >
-                <source 
-                srcset="
-                "
-                media="(min-width: 768px)"
-                >
-                <img src="" 
-                alt="eco-milk"
-                />
-            </picture>
-        </div>
+        <div class="hero__wrap">
+            <div class="hero__top-title">
+                <div class="hero__top-first">
+                    <h1 class="hero__text">ice cream made with
+                        <span class="hero__top-text">passion</span>
+                    </h1>
+                    <ul class="button-top__list">
+                        <li class="button-top__item">
+                            <a class="button-first" href="" >Products</a>
+                        </li>
+                        <li class="button-top__item">
+                            <a class="button-second" href="">How it’s made?</a>
+                        </li>
+                    </ul>
+                    <div class="hero__image-eco">
+                        <picture>
+                            <source 
+                            srcset="
+                            /images/desctop.eco.1x.png 1x,
+                            /images/desctop.eco.2х.png 2x
+                            "
+                            media="(min-width: 1280px)"
+                            >
+                            <source 
+                            srcset="
+                            /images/tablet.eco.1x.png 1x,
+                            /images/tablet.eco.2х.png 2x
+                            "
+                            media="(min-width: 768px)"
+                            >
+                            <img src="/images/tablet.eco.2х.png" 
+                            alt="eco-milk"
+                            />
+                        </picture>
+                        <div class="hero__part-eco">
+                            <p class="hero__text-eco" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                            <a class="hero__link-eco" href="#">
+                                <svg class="hero__icon-eco">
+                                    <use href="/images/icons.svg#icon-arrow-right2"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>    
+            </div>
+            <div class="hero-circle">
+                <picture>
+                        <source 
+                        srcset="
+                        /images/desctop.ice.1x.png 1x,
+                        /images/desctop.ice.2х.png 2x
+                        "
+                        media="(min-width: 1280px)"
+                        >
+                        <source 
+                        srcset="
+                        /images/tablet.ice.1x.png 1x,
+                        /images/tablet.ice.2х.png 2x
+                        "
+                        media="(min-width: 768px)"
+                        >
+                        <source 
+                        srcset="
+                        /images/mob.ice.1x.png 1x,
+                        /images/mob.ice.2х.png 2x
+                        "
+                        media="(min-width: 320px)"
+                        >
+                        <img class="hero__img-ice" src="/images/tablet.ice.2х.png" 
+                        alt="ICECREAM"
+                        />
+                </picture>
+            </div>
+            <div class="hero__top-second">
+                <ul class="hero__top-list">
+                    <li class="hero__top-item">
+                        <p class="hero__item-number"></p>
+                        <p class="hero__item-text"></p>
+                    </li>
+                    <li class="hero__top-item">
+                        <p class="hero__item-number"></p>
+                        <p class="hero__item-text"></p>
+                    </li>
+                </ul>
+                <picture>
+                    <source 
+                    srcset="
+                    /images/desctop.tasty.1x.png 1x,
+                    /images/desctop.tasty.2х.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                    >
+                    <source 
+                    srcset="
+                    /images/tablet.tasty.1x.png 1x,
+                    /images/tablet.tasty.2х.png 2x
+                    "
+                    media="(min-width: 768px)"
+                    >
+                    <img class="hero__img-tasty" src="/images/tablet.tasty.2х.png" 
+                    alt="ICECREAM tasty"
+                    />
+                </picture>
+            </div>
+        </div>    
     </div>
 </section>
