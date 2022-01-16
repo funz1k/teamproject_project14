@@ -1,23 +1,10 @@
-.header{
+.header .container {
     background-color: #FFB8CA;
     display: flex;
     align-items: center;
-    .container{
-        padding-top: 21px;
-        padding-bottom: 27px;
-    }
+    padding-top: 21px;
+    padding-bottom: 27px;
 }
-.container{
-    min-width: 320px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.header__navigation{
-
-}
-
 .header__list{
     display: flex;
     @media screen and (max-width: 1280px){
@@ -29,17 +16,10 @@
     font-size: 16px;
     font-style: blod;
     font-family: "DM+Sans";
-    
-
 }
-
-
-
-
 .header-logo__item{
     display: flex;
     align-items: center;
-
 }
 .header-logo__form{
     width: 50px;
@@ -64,6 +44,7 @@
     color: #D41443;
     margin-left: 10px;
 }
+
 .header-burger{ 
     display: none;
     @media screen and (max-width: 1280px){
@@ -71,16 +52,18 @@
         position: relative;
         width: 30px;
         height: 20px;
+        margin-left: auto;
     }
 }
 .header-burger {
     &:before, &:after {
         content: '';
-        background-color: #ffffff;
+        background-color: #D41443;
         position: absolute;
         width: 100%;
         height: 3px;
         left: 0;
+        border-radius: 3px;
     }
     &:before {
         top: 0;
@@ -89,27 +72,148 @@
         bottom: 0;
     }
 }
+.header-burger__line{ 
+    position: absolute;
+    background-color: #D41443;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    top: 9px;
+    border-radius: 3px;
+}
+.header__navigation{
+    display: flex;
+}
 
-/*
-.button-menu{
-    
+/*---------------------------hero--------------------------*/
+
+.hero .container {
+    background-color: #FFB8CA;
     margin-left: auto;
+    margin-right: auto;
+    height: 405px;/*
+    @media screen and (min-width: 768px) {
+        padding-top: 38px;   
+    }*/
+}
+.hero__top-title{
+    @media screen and (min-width: 240px) and (max-width: 767px){
+        position: absolute;
+        z-index:2;
+        top: 193px;
+        left: 20px;
+    }
+        @media screen and (min-width: 768px){
+            top: 102px;
+            left: 34px;
+            position: absolute;
+            z-index:2;
+        }
+            @media screen and (min-width: 1199px){
+            top: 171px;
+            left: 115px;
+            position: absolute;
+            z-index:2;
+        }
+}
+
+.hero__text{
+    color: #ffffff;
+    font-family: "Titan One", cursive;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    max-width: 218px;
+    margin-bottom: 19px;
+}
+.hero__top-text{
     color: #D41443;
-    width: 40px;
-    height: 40px;
+    text-transform: uppercase;
+    font-family: "Titan One", cursive;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+}
+.button-top__list{
+    display: flex;
+}
+.button-top__item{}
+
+.button-first{
+    width: 62.4px;
+    height: 24px;
+    background-color: #D41443;
+    border: 0;
     align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
-    border-color: transparent;
-    border: none;
-    @media screen and (min-width: 1280px){
-        display: none;
+    text-align: center;
+    display: flex;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    color: #ffffff;
+    padding-left: 14px;
+        &:hover,
+        &:focus{
+            background-color: #C7133E;
     }
 }
-.button-menu__icon{
+.button-second{
+    width: 82.8px;
+    height: 24px;
+    background-color: #ffffff;
+    border: 0;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border-radius: 20px;
     color: #D41443;
-        width: 24px;
-        height: 16px;
-        
-    
-}*/
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    padding-left: 14px;
+        &:hover,
+        &:focus{
+            background-color: #ECEBEB;
+    }
+}
+
+.hero__round{
+    display: block;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    color: #3911ec;
+    position: absolute;
+    content: '';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

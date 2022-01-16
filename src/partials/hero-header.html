@@ -1,6 +1,7 @@
 
 <header class="header">
     <div class="container">
+        <nav class="header__navigation">
             <a class="link header-logo" href="">
                 <div class="header-logo__item">
                     <div class="header-logo__form">
@@ -11,14 +12,6 @@
                     <span class="header-logo__text">ICECREAM</span>
                 </div>
             </a>
-            <div class="header-burger">
-                <span>
-
-                </span>
-            </div>
-
-
-        <nav class="header__navigation">
             <ul class="header__list">
                 <li>
                     <a class="link header__link" href="">Home</a>
@@ -37,56 +30,55 @@
                 </li>
             </ul>
         </nav>
-<!---
-        <button type="button" class="button-menu" >
-            <svg class="button__menu-icon" width="24" height="16">
-                <use href="./images/icons.svg#icon-menu_24px1"></use>
-            </svg>
-        </button>
--->
-
-<!----
-        <button>
-            <svg>
-            <use></use>
-            </svg>
-        </button>
-        <button>
-
-        </button>--->
-
+        <div class="header-burger">
+                <span class="header-burger__line"></span>
+        </div>
     </div>
+
+
+
+    
 </header>
 
 
 
 <section class="hero">
-<div class="container">
-        <div>
-            <h1>ice cream made with
-                <p>passion</p>
+    <div class="container">
+        <div class="hero__top-title">
+            <h1 class="hero__text">ice cream made with
+                <span class="hero__top-text">passion</span>
             </h1>
-            <ul>
-                <li>
-                    <button></button>
+            <ul class="button-top__list">
+                <li class="button-top__item">
+                    <button type="button" class="button-first" href="">
+                    Products</button>
                 </li>
-                <li>
-                    <button></button>
+                <li class="button-top__item">
+                    <button type="button" class="button-second" href="">
+                    How it’s made?</button>
                 </li>
             </ul>
         </div>
-        <div>
-            <picture 1>
-                <source >
+        <div class="hero__image-eco">
+            <picture>
+                <source 
+                srcset="
+                /src/images/hero.img/desctop.eco.1x.png 1x,
+                /src/images/hero.img/desctop.eco.2х.png 2x
+                "
+                media="(min-width: 1200px)"
+                >
+                <source 
+                srcset="
+                /src/images/hero.img/tablet.eco.1x.png 1x,
+                /src/images/hero.img/tablet.eco.2х.png 2x
+                "
+                media="(min-width: 768px)"
+                >
+                <img src="../images/hero.img/desctop.eco.2х.png" 
+                alt="eco-milk"
+                />
             </picture>
         </div>
-
-
-
-
-
-</div>
-
-
-
+    </div>
 </section>
