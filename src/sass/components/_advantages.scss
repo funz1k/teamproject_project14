@@ -7,7 +7,7 @@
 }
 
 .advantages {
-  background-color: #fff5f6;
+  background-color: $second-bg-color;
 }
 
 .advantages-list {
@@ -24,7 +24,7 @@
 }
 
 .advantages-list__item {
-  height: 156px;
+  min-height: 156px;
   width: 230px;
   position: relative;
   @media screen and (max-width: 768px) {
@@ -32,7 +32,7 @@
   }
   @media screen and (min-width: 768px) {
     margin-left: 60px;
-    height: 222px;
+    min-height: 222px;
     width: 180px;
   }
   @media screen and (min-width: 1280px) {
@@ -70,7 +70,7 @@
   font-size: 36px;
   line-height: 1.13em;
   letter-spacing: 0.04em;
-  color: #d41443;
+  color: $title-color;
   margin-bottom: 15px;
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -88,7 +88,7 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 20px;
-  color: black;
+  color: $main-text-color;
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 24px;
