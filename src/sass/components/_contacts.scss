@@ -1,4 +1,5 @@
 .filials-contacts{
+    position:relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -6,6 +7,16 @@
     background: 
     linear-gradient(to bottom, #ffffff 1%, 
                               #ffb8ca 99%);
+    &::before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -115px;
+        z-index: -1;
+        background-image: url(../images/sectionbg.png);
+    background-size: contain;
+    }
 }
 
 .contacts-container{
@@ -36,7 +47,7 @@ margin-bottom: 25px;
 @media screen and (min-width: 768px){
     margin-bottom: 30px;
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1280px){
     margin-bottom: 30px;
 }
 }
@@ -58,7 +69,7 @@ margin-bottom: 25px;
 @media screen and (min-width: 768px){
     margin-bottom: 30px;
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1280px){
     margin-bottom: 30px;
 }   
 }
@@ -83,7 +94,7 @@ margin-top: 10px;
     margin-bottom: 30px;
     margin-top: 15px;
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1280px){
     margin-bottom: 30px;
     margin-top: 10px;
 }
@@ -99,7 +110,7 @@ margin-top: 10px;
         margin-bottom: 30px;
         margin-top: 30px;
     }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1280px){
         margin-bottom: 35px;
         margin-top: 32px;
     }
@@ -122,6 +133,11 @@ font-weight: 500;
 font-size: 12px;
 line-height: 1.5px;
 color: $second-text-color;
+&:hover,
+&:focus,
+.current{
+color: $second-title-color;
+}
 }
 
 .contacts__hr-line{
@@ -134,7 +150,7 @@ color: $second-text-color;
         margin-bottom: 30px;
         margin-top: 30px;
     }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1280px){
         margin-bottom: 32px;
         margin-top: 32px;
     }
@@ -161,7 +177,7 @@ align-items: center;
         margin-right: 15px;
         width: 190px;
     } 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1280px){
         margin-top: 85px; 
         width: 198px; 
     } 
@@ -176,6 +192,11 @@ line-height: 1.31;
 color: $third-text-color;
 margin-top: 55px;
 margin-bottom: 10px;
+&:hover,
+&:focus,
+.current{
+    box-shadow: 0px 3px 1px rgba(158, 15, 15, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 }
 
 .modal-open{
@@ -183,7 +204,7 @@ margin-bottom: 10px;
         margin-top: 80px; 
         width: 175px; 
     } 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1280px){
         margin-top: 85px; 
         width: 180px; 
     } 
@@ -196,6 +217,11 @@ font-weight: bold;
 font-size: 16px;
 line-height: 1.31;
 color: #D41443;
+&:hover,
+&:focus,
+.current{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 }
 
 .contacts-list__wrap{
@@ -215,7 +241,7 @@ color: #D41443;
     @media screen and (max-width: 767px){
      &:not(:last-child){
         margin-bottom: 20px;
-    }
+    }  
 }
     @media screen and (min-width: 768px){
         width: 220px;
@@ -223,22 +249,26 @@ color: #D41443;
             margin-right: 20px;
         }
             }
-    @media screen and (min-width: 1200px){
-        width: 100%;
-        &:not(:last-child){
-            margin-right: 30px;
-        }
-            }
+    @media screen and (min-width: 1280px){
+        max-width: 330px;
+&:not(:last-child){
+    margin-right: 30px;
+}
+    }
+    &:hover,
+    &:focus,
+    .current{
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
-// .icon {
-//     display: inline-block;
-//     width: 1em;
-//     height: 1em;
-//     stroke-width: 0;
-//     stroke: currentColor;
-//     fill: #D41342;
-//   }
-//   .icon-Vector-1 {
-//     width: 0.7001953125em;
-//   }
+.contacts-btn__icon{
+    display: block;
+    width: 6px;
+    height: 8px;
+    fill: currentColor;
+      margin-left: 18px;
+    @media screen and (min-width: 768px) {
+      margin-left: 14px;
+    }
+}
