@@ -8,12 +8,16 @@
     background-color: #FFB8CA;
     display: flex;
     align-items: center;
+    padding-top: 21px;
+    padding-bottom: 27px;
     @media screen and (min-width: 1280px){
         padding-bottom: 21px;
     }
     @media screen and (min-width: 768px){
         padding-bottom: 15px;
         padding-top: 38px;
+        padding-right: 34px;
+        padding-left: 34px;
     }
 }
 .header__list{
@@ -21,7 +25,7 @@
     z-index: 2;
     align-items: center;
     display: flex;
-        @media screen and (max-width: 1199px){
+        @media screen and (max-width: 1279px){
             display: none;
     }
 }
@@ -55,15 +59,6 @@
     display: flex;
     align-items: center;
 }
-/*
-.header-logo__form{
-    @media screen and (min-width: 1200px){
-        position: absolute;
-        top: 37px;
-        left: 208px;
-        transform: translateY(-50%);
-    }
-}*/
 
 .header-logo__icon{
     justify-content: center;
@@ -97,6 +92,9 @@
     &:focus{
         background-color: #ECEBEB;
         transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 350ms;
+    }
+    @media screen and (max-width: 767px){
+        display: none;
     }
 }
 .header-button__content{
@@ -169,19 +167,17 @@
 }
 .hero .container{
     position: relative;
-    @media screen and (min-width: 768px){
-        display: flex;
+    
+    @media screen and (max-width: 768px){
+        overflow-x: hidden;
+        padding-top: 10px;
     }
-    /*
-    @media screen and (min-width: 768px) and (max-width: 1280px){
-        height: 301px;
-    }
-    @media screen and (min-width: 1199px){
-        height: 567px;
-    }*/
 }
-.hero__wrap{
 
+.hero__wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hero__top-title{
     @media screen and (min-width: 1280px){
@@ -219,13 +215,14 @@
 .hero__image-eco{
     display: flex;
     align-items: flex-end;
+    @media screen and (max-width: 767px){
+        display: none;
+    }
     /*
     @media screen and (min-width: 1199px){
         margin-top: 56px;
     }
-    @media screen and (max-width: 767px){
-        display: none;
-    }*/
+    */
 }
 .hero__text{
     color: #ffffff;
@@ -379,27 +376,15 @@
 }
 
 
-
-
-
-
-
-
-/*
-.hero__top-title{
-    position: absolute;
-}
-.hero-circle{
-    position: absolute;
-}*/
-
-
 .hero__top-second{
     position: relative;
     z-index: 2;
     margin-left: auto;
     @media screen and (min-width: 1280px){
     padding-top: 52px;
+    }
+    @media screen and (max-width: 767px){
+        display: none;
     }
 }
 .hero__top-list{
