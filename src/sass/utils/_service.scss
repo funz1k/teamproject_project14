@@ -15,7 +15,8 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-img {
+img,
+picture {
     display: block;
     max-width: 100%;
     height: auto;
@@ -26,7 +27,17 @@ body.modal-open {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 320px;
     margin: 0 auto;
     padding: 0 20px;
+
+    @media screen and (min-width: 480px) {
+        min-width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        min-width: 768px;
+    }
+    @media screen and (min-width: 1280px) {
+        min-width: 1280px;
+    }
 }
