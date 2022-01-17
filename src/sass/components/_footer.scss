@@ -38,6 +38,12 @@ footer {
   }
 }
 .footer__wrap {
+  @media screen and (min-width: 320px) and (max-width: 1279px) {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: left;
+  }
   @media screen and (min-width: 768px) {
     width: 340px;
     height: 183px;
