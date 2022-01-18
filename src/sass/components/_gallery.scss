@@ -1,10 +1,5 @@
 .gallery {
     background: linear-gradient(to bottom, $second-bg-color 40%, $third-text-color 40%);
-    padding-bottom: 80px;
-
-    @media screen and (min-width: 768px) {
-        padding-bottom: 120px;
-    }
 }
 .gallery__grid {
     display: grid;
