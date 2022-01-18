@@ -50,7 +50,7 @@ textarea {
 
 body {
   margin: 0;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
@@ -75,15 +75,12 @@ img {
 
 body.modal-open {
   overflow: hidden;
-  overflow: hidden;
-}
-
+  
 .container {
   max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 @media screen and (min-width: 480px) {
   .container {
     min-width: 480px;
@@ -524,5 +521,5 @@ body.modal-open {
   -webkit-transform: scale(1.1) translateY(50%);
           transform: scale(1.1) translateY(50%);
   z-index: 1;
-}
+
 /*# sourceMappingURL=main.css.map */
