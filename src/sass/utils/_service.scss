@@ -17,16 +17,15 @@ body {
 }
 img,
 picture {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body.modal-open {
   overflow: hidden;
   overflow: hidden;
 }
-
 .container {
   max-width: 320px;
   margin: 0 auto;
