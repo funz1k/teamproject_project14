@@ -1,4 +1,4 @@
-<!-----------------------------------------header-----------------------------
+<!-----------------------------------------header------------------------------------->
 
 <header class="header">
     <div class="container header__container">
@@ -32,10 +32,44 @@
             </ul>
         </nav>
         <button class="button-menu-open" type="button">
-            <div class="header-burger">
-                <span class="header-burger__line"></span>
-            </div>
+            <svg class="header-burger header-burger__line" width="8" height="11">
+                <use href="./images/icons.svg#icon-menu_24px1"></use>
+            </svg>
         </button>
+        <!--------------------------------------------mobmenu----------------------------------->
+
+        <div class="mob-menu is-hidden">
+            <button class="mob-close-btn" type="button">
+                <svg class="mob-close-icon" width="14" height="14">
+                    <use href="./images/icons.svg#icon-Vector-1"></use>
+                </svg>
+            </button>
+            <div class="mob-menu-top">
+                <button class="mob-menu-button" type="button">
+                    <span class="mob-menu-button__content">Buy now</span>
+                        <svg  width="8" height="11">
+                            <use href="./images/icons.svg#icon-Vector-11"></use>
+                        </svg>
+                </button>
+                <ul class="mobail-list">
+                    <li class="mobail-list__item">
+                            <a class="link mobail-list__link" href="#">Home</a>
+                    </li>
+                    <li class="mobail-list__item">
+                            <a class="link mobail-list__link" href="#">About us</a>
+                    </li>
+                    <li class="mobail-list__item">
+                            <a class="link mobail-list__link" href="#">How it’s made?</a>
+                    </li>
+                    <li class="mobail-list__item">
+                            <a class="link mobail-list__link" href="#">Our products</a>
+                    </li>
+                    <li class="mobail-list__item">
+                            <a class="link mobail-list__link" href="#">Contact</a>
+                    </li>
+                </ul>  
+            </div>
+        </div>
         <button class="header-button" type="button">
             <span class="header-button__content">Buy now</span>
             <svg  width="8" height="11">
@@ -43,8 +77,6 @@
             </svg>
         </button>
     </div> 
-
-
 </header>
 
 
@@ -151,39 +183,8 @@
         </div>    
     </div>
 </section>
--------->
+
 <!--------------------------------------------mobmenu----------------------------------->
 
-        <div class="mob-menu is-hidden">
-            <button type="button" class="mob-close-btn">
-                <svg class="mob-close-icon" width="14" height="14">
-                    <use href="./images/icons.svg#icon-Vector-1"></use>
-                </svg>
-            </button>
-            <div class="mob-menu-top">
-                <button class="mob-menu-button" type="button">
-                    <span class="mob-menu-button__content">Buy now</span>
-                        <svg  width="8" height="11">
-                            <use href="./images/icons.svg#icon-Vector-11"></use>
-                        </svg>
-                </button>
-                <ul class="mobail-list">
-                    <li class="mobail-list__item">
-                            <a class="link mobail-list__link" href="#">Home</a>
-                    </li>
-                    <li class="mobail-list__item">
-                            <a class="link mobail-list__link" href="#">About us</a>
-                    </li>
-                    <li class="mobail-list__item">
-                            <a class="link mobail-list__link" href="#">How it’s made?</a>
-                    </li>
-                    <li class="mobail-list__item">
-                            <a class="link mobail-list__link" href="#">Our products</a>
-                    </li>
-                    <li class="mobail-list__item">
-                            <a class="link mobail-list__link" href="#">Contact</a>
-                    </li>
-                </ul>  
-            </div>
-        </div>
+        <script src="/js/menu.js"></script>
         

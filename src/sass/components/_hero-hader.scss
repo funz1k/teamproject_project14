@@ -115,46 +115,32 @@
     color: #D41443;
     margin-right: 12px;
 }
-.header-burger {
-    &:before, &:after {
-        content: '';
-        background-color: #D41443;
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        left: 0;
-        border-radius: 3px;
-    }
-    &:before {
-        top: 0;
-    }
-    &:after {
-        bottom: 0;
-    }
-}
+
 .header-burger__line{ 
     position: absolute;
-    background-color: #D41443;
+    fill: #D41443;
     position: absolute;
     left: 0;
     width: 100%;
     height: 3px;
-    top: 9px;
     border-radius: 3px;
 }
 .header-burger{ 
     display: none;
+    @media screen and (max-width: 768px){
+        border-color:#FFB8CA ;}
     @media screen and (max-width: 1279px){
         display: block;
         position: relative;
-        width: 30px;
+        width: 23px;
         height: 20px;
         margin-left: auto;
-        background-color: #FFB8CA;}
+        background-color: #FFA5BA;
+    }
     @media screen and (min-width: 768px) and (max-width: 1280px){
         position: relative;
         z-index: 999;
-        background-color: #FFB8CA;
+        background-color: #FFA5BA ;
     }
 }
 
@@ -489,25 +475,28 @@
 /*-----------------------------------------mobmenu-----------------------------------------------*/
 .mob-menu{
     background-color: #E17992;
-    height: 100%;
+    height: 100vh;
     width: 250px;
-    position: fixed;
-    z-index: 999;
+    z-index: 5;
     top: 0;
     right: 0;
     position: fixed;
+    overflow: auto;
+    /*
+    transform: translateX(250%);
+    opacity: 0;
+    transition: transform .75s linear,opacity .75s linear;
     box-shadow:  -8px, 0px 20px rgba(0, 0, 0, 0.25);
+    */
 }
-mob-menu-top
 .mob-close-btn{
-    background-color: #E17992;
-}
-.mob-close-icon{
     background-color: #E17992;
     position: absolute;
     z-index: 1;
     top: 23px;
     left: 208px;
+}
+.mob-close-icon {
     fill: #ffffff;
 }
 .mob-menu-button{
