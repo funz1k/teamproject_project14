@@ -131,6 +131,8 @@ font-weight: 500;
 font-size: 12px;
 line-height: 1.5px;
 color: $second-text-color;
+transition: color 350ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
 &:focus,
 .current{
@@ -166,27 +168,34 @@ align-items: center;
         }
 }
 
-.location-open{
+.contacts-btn__first-btn{
     @media screen and (min-width: 768px){
         margin-top: 80px;  
         margin-right: 15px;
-        width: 190px;
     } 
     @media screen and (min-width: 1280px){
         margin-top: 85px; 
-        width: 198px; 
-    } 
-width: 162px;
-height: 44px;
+} 
+display: flex;
+align-items: center;
+justify-content: center;
 background: #D41342;
-border-radius: 22px;
 font-style: normal;
 font-weight: bold;
 font-size: 16px;
 line-height: 1.31;
 color: $third-text-color;
+min-width: 176px;
+height: 44px;
+border-radius: 22px;
+padding: 13px 28px;
 margin-top: 55px;
 margin-bottom: 10px;
+transition: box-shadow 350ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 &:hover,
 &:focus,
 .current{
@@ -194,16 +203,16 @@ margin-bottom: 10px;
 }
 }
 
-.modal-open{
+.contacts-btn_btn{
     @media screen and (min-width: 768px){
-        margin-top: 80px; 
-        width: 175px; 
+        margin-top: 80px;  
     } 
     @media screen and (min-width: 1280px){
-        margin-top: 85px; 
-        width: 180px; 
-    } 
-width: 161px;
+        margin-top: 85px;  
+} 
+display: flex;
+align-items: center;
+justify-content: center;
 height: 44px;
 background: #FFFFFF;
 border-radius: 22px;
@@ -211,7 +220,14 @@ font-style: normal;
 font-weight: bold;
 font-size: 16px;
 line-height: 1.31;
+min-width: 176px;
+padding: 13px 28px;
 color: #D41443;
+transition: box-shadow 350ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 &:hover,
 &:focus,
 .current{
@@ -220,37 +236,49 @@ color: #D41443;
 }
 
 .contacts-list__wrap{
-   @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px){
         display: flex;
+    }
+    @media screen and (min-width: 1280px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     }
 
 
 .contacts-list__list{
+background: #FFFFFF;
+box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+border-radius: 24px;
+padding: 43px 21px 43px 20px;
+@media screen and (max-width: 767px){
     align-items: center;
     margin: auto;
     width: 220px;
-    background: #FFFFFF;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    padding: 43px 21px 43px 20px;
-    @media screen and (max-width: 767px){
-     &:not(:last-child){
-        margin-bottom: 20px;
-    }  
+    &:not(:last-child){
+    margin-bottom: 20px;
+}  
 }
-    @media screen and (min-width: 768px){
-        width: 220px;
-        &:not(:last-child){
-            margin-right: 20px;
-        }
-            }
-    @media screen and (min-width: 1280px){
-        max-width: 330px;
-&:not(:last-child){
-    margin-right: 30px;
-}
+@media screen and (min-width: 768px){
+    width: 220px;
+    &:not(:last-child){
+        margin-right: 20px;
     }
+        }
+@media screen and (min-width: 1280px){
+    max-width: 330px;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+// align-items: center;
+// margin: auto;
+}
+transition: box-shadow 350ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
     &:hover,
     &:focus,
     .current{
