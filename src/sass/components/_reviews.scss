@@ -1,4 +1,3 @@
-
 .section {
   padding-top: 80px;
   padding-bottom: 85px;
@@ -12,15 +11,15 @@
   }
 }
 
-.container {
-  min-width: 280px;
-  @media screen and (min-width: 768px) {
-    min-width: 620px;
-  }
-  @media screen and (min-width: 1280px) {
-    min-width: 925px;
-  }
-}
+// .container {
+//   min-width: 280px;
+//   @media screen and (min-width: 768px) {
+//     min-width: 620px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     min-width: 925px;
+//   }
+// }
 
 .review-foto {
   width: 85px;
@@ -126,12 +125,7 @@
     font-size: 16px;
     line-height: 1.86;
     width: 750px;
-    background-image: repeating-linear-gradient(
-      180deg,
-      transparent,
-      transparent 28px,
-      #e1e1e1 29px
-    );
+    background-image: repeating-linear-gradient(180deg, transparent, transparent 28px, #e1e1e1 29px);
   }
 
   letter-spacing: 0.04em;
@@ -176,7 +170,7 @@
   border-radius: 50%;
   &::before,
   &::after {
-    content: '';
+    content: "";
     display: inline-block;
     position: absolute;
     width: 4px;
