@@ -1,22 +1,20 @@
 .filials-contacts{
-    position:relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 115px;
-    background: 
-    linear-gradient(to bottom, #ffffff 1%, 
-                              #ffb8ca 99%);
-    &::before{
-        content: '';
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: -115px;
-        z-index: -1;
-        background-image: url(../images/sectionbg.png);
-    background-size: contain;
-    }
+padding-bottom: 115px;
+background: 
+linear-gradient(to bottom, #ffffff 1%, 
+#ffb8ca 99%);
+
+@media screen and (min-width: 768px){
+padding-bottom: 165px;
+}
+@media screen and (min-width: 1280px){
+background: url(../images/sectionbg.png),
+linear-gradient(to bottom, #ffffff 1%, 
+#ffb8ca 99%);
+background-repeat: no-repeat;
+background-size: auto;
+background-position: center;
+}
 }
 
 .contacts-container{
@@ -166,9 +164,6 @@ align-items: center;
         display: flex;
         justify-content: center;
         }
-
-//    justify-content: center;
-//     text-align: center; 
 }
 
 .location-open{
@@ -228,7 +223,8 @@ color: #D41443;
    @media screen and (min-width: 768px){
         display: flex;
     }
-}
+    }
+
 
 .contacts-list__list{
     align-items: center;
