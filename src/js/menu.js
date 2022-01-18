@@ -10,5 +10,6 @@
 
     function toggleMenu() {
         refs.menu.classList.toggle('is-hidden');
+        refs.openMenuBtn.classList.toggle('is-hidden');
     }
 })();

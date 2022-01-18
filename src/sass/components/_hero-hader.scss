@@ -475,19 +475,15 @@
 /*-----------------------------------------mobmenu-----------------------------------------------*/
 .mob-menu{
     background-color: #E17992;
-    height: 100vh;
+    height: 100%;
     width: 250px;
     z-index: 5;
     top: 0;
     right: 0;
     position: fixed;
-    overflow: auto;
-    /*
-    transform: translateX(250%);
-    opacity: 0;
-    transition: transform .75s linear,opacity .75s linear;
-    box-shadow:  -8px, 0px 20px rgba(0, 0, 0, 0.25);
-    */
+        & .is-hidden{
+            transform: translateX(100%);
+        }
 }
 .mob-close-btn{
     background-color: #E17992;
@@ -557,7 +553,9 @@
     border-top: 1px solid #E18298;
     border-bottom: 1px solid #E18298;
 }
-
+.button-menu-open .is-hidden{
+    display: none;
+}
 
 
 
