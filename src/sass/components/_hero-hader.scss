@@ -135,6 +135,10 @@ position: relative;
     @media screen and (max-width: 767px) {
         display: none;
     }
+
+    &.is-hidden {
+        opacity: 0;
+    }
 }
 .header-button__content {
     font-size: 16px;
