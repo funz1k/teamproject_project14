@@ -67,7 +67,7 @@
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 18px);
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
 }
 
 .swiper-pagination-bullet-active {
@@ -122,7 +122,12 @@
     font-size: 16px;
     line-height: 1.86;
     width: 750px;
-    background-image: repeating-linear-gradient(180deg, transparent, transparent 28px, #e1e1e1 29px);
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 28px,
+      #e1e1e1 29px
+    );
   }
 
   letter-spacing: 0.04em;
@@ -154,34 +159,10 @@
   }
 }
 
-.review__dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-.review__main-dot {
-  position: relative;
-  width: 4px;
-  height: 4px;
-  background: #c7133e;
-  border-radius: 50%;
-  &::before,
-  &::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    margin-top: 30px;
-    background: #c7133e;
-    border-radius: 50%;
-  }
+.review__name-container {
   &::before {
-    left: 10px;
-    top: -30px;
-  }
-  &::after {
-    right: 10px;
-    top: -30px;
+    content: '. . .';
+    font-size: 36px;
+    color: #c7133e;
   }
 }
