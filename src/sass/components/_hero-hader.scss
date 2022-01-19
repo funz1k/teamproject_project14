@@ -97,6 +97,8 @@
     align-items: center;
     padding: 12px 37px;
     margin-left: 110px;
+    opacity: 1;
+    transition: opacity 250ms linear;
     &:hover {
         background-color: #ecebeb;
         transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 350ms;
@@ -106,6 +108,10 @@
     }
     @media screen and (max-width: 767px) {
         display: none;
+    }
+
+    &.is-hidden {
+        opacity: 0;
     }
 }
 .header-button__content {
