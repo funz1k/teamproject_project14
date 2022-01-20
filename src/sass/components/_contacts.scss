@@ -340,8 +340,10 @@
     display: block;
     width: 8px;
     height: 13px;
-    fill: currentColor;
+    fill: #d41443;
     margin-left: 18px;
+    stroke: #d41443;
+    stroke-width: 2px;
     @media screen and (min-width: 768px) {
         margin-left: 14px;
     }
