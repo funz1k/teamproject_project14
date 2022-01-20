@@ -1,6 +1,6 @@
 .about {
   background-color: $second-bg-color;
-  background-image: url('../images/about/milk-mob-1.png');
+  background-image: url("../images/about/milk-mob-1.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
@@ -14,13 +14,13 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/about/milk-mob-1-2x.png');
+    background-image: url("../images/about/milk-mob-1-2x.png");
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url('../images/about/milk-1.png');
+    background-image: url("../images/about/milk-1.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     background-position-x: center;
     background-position-y: 90%;
 
@@ -28,7 +28,7 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/about/milk-1-2x.png');
+      background-image: url("../images/about/milk-1-2x.png");
     }
   }
 
